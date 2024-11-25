@@ -1,0 +1,107 @@
+body {
+  background-color: rgb(240,240,240);
+  margin: 0;
+  
+
+
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+
+
+form {
+  align-self: center;
+}
+
+
+table {
+  align-self: center;
+  width: 1000px;
+
+  border: 1px solid rgba(25,25,25);
+  border-radius: 10px;
+
+  padding: 5px 0 10px 0;
+}
+table > tbody,
+table > tbody > tr,
+table > tbody > tr > td {
+  /*border: 1px solid red;*/
+  border: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+table > tbody > tr:nth-child(1),
+table > tbody > tr:nth-child(2n) {
+  background-color: rgb(210,210,210);
+}
+
+table > tbody > tr:not(table > tbody > tr:nth-child(2n)):not(table > tbody > tr:nth-child(1)) {
+  background-color: rgb(230,230,230)
+}
+
+table > tbody > tr:nth-child(2) {
+  background-color: rgb(104,182,248);
+  color: white;
+}
+
+table > tbody > tr:nth-child(2n + 1) {
+  background-color: rgb(240,240,240);
+}
+
+table > tbody > tr:hover:not(table > tbody > tr:nth-child(2)),
+table > tbody > tr:hover:not(table > tbody > tr:nth-child(2n)):not(table > tbody > tr:nth-child(1)) {
+  background-color: lightblue;
+}
+table > tbody > tr > td {
+  padding: 0 10px 0 10px;
+}
+
+
+
+.btn {
+  background-color: darkgray;
+  cursor:pointer;
+  text-align: center;
+
+  align-self: center;
+}
+.btn:hover{
+  background-color: grey;
+  cursor:pointer;
+}
+.btn:active{
+  background-color: lightgrey;
+  cursor:pointer;
+}
+
+
+
+
+.page {
+  
+  font-size: 1.2rem;
+  
+  display:flex;
+  flex-direction: column;
+}
+.page > .btn {
+  
+  width: 200px;
+
+  padding: 1em;
+  margin: 1em;
+}
