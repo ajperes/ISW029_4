@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(240,240,240);
+  background-color: rgb(252,252,252);
   margin: 0;
   
 
@@ -19,7 +19,17 @@ code {
 
 
 
+h1 {
+  text-align: center;
+}
 
+section {
+  text-align: center;
+}
+section > a {
+  padding: 1px;
+  margin: 50px;
+}
 
 form {
   align-self: center;
@@ -27,6 +37,8 @@ form {
 
 
 table {
+  background-color: rgb(240,240,245);
+  
   align-self: center;
   width: 1000px;
 

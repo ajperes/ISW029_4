@@ -52,7 +52,7 @@ export default function Suppliers() {
         f.preventDefault();
 
         const id = parseInt(f.target.Supp_id.value);
-        
+
         const supplier: Supplier = {
             Supp_id: id,
             Supp_name: f.target.Supp_name.value,
@@ -78,6 +78,13 @@ export default function Suppliers() {
     }, []);
     return (
         <div className="page">
+            <title>Supl</title>
+            <h1>Supplier</h1>
+            <section>
+                <a href="/product">Product</a>
+                <a href="/">Historico_Compras</a>
+                <a href="/supplier">Supplier</a>
+            </section>
             <div className="btn" onClick={fetchSuppliers}>REFRESH</div>
 
 
@@ -104,8 +111,8 @@ export default function Suppliers() {
                                 <td>{supp.Supp_name}</td>
                                 <td>{supp.Supp_cnpj}</td>
                                 <td>{supp.Supp_act
-                                ? <span style={{color: "green"}}>[ Y ]</span> 
-                                : <span style={{color: "red"}}>[ N ]</span>}</td>
+                                    ? <span style={{ color: "green" }}>[ Y ]</span>
+                                    : <span style={{ color: "red" }}>[ N ]</span>}</td>
                                 <td><div className="btn" onClick={() => deleteSupplier(supp.Supp_id)}>X</div></td>
                             </tr>
                         ))}

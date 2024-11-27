@@ -149,6 +149,13 @@ export default function BuyLog() { // Histórico_Compras
     }, []);
     return (
         <div className="page">
+            <title>Historico_Compras</title>
+            <h1>Historico_Compras</h1>
+            <section>
+                <a href="/product">Product</a>
+                <a href="/">Historico_Compras</a>
+                <a href="/supplier">Supplier</a>
+            </section>
             <div className="btn" onClick={fetchBuyEntries}>REFRESH</div>
 
 

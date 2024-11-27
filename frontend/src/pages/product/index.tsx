@@ -91,6 +91,13 @@ export default function Products() {
     }, []);
     return (
         <div className="page">
+            <title>Product</title>
+            <h1>Product</h1>
+            <section>
+                <a href="/product">Product</a>
+                <a href="/">Historico_Compras</a>
+                <a href="/supplier">Supplier</a>
+            </section>
             <div className="btn" onClick={fetchProducts}>REFRESH</div>
 
 
@@ -120,8 +127,8 @@ export default function Products() {
                                 <td>{prod.Prod_count}</td>
                                 <td>{prod.Prod_price}</td>
                                 <td>{prod.Prod_act
-                                ? <span style={{color: "green"}}>[ Y ]</span> 
-                                : <span style={{color: "red"}}>[ N ]</span>}</td>
+                                    ? <span style={{ color: "green" }}>[ Y ]</span>
+                                    : <span style={{ color: "red" }}>[ N ]</span>}</td>
                                 <td><div className="btn" onClick={() => deleteProduct(prod.Prod_id)}>X</div></td>
                             </tr>
                         ))}
